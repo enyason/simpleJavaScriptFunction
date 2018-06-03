@@ -1,0 +1,42 @@
+<html>
+
+<body>
+
+    <h1>Check Animal Available in Store</h1>
+    <p>Enter Annnimal Name</p>
+    <input type="text" id="inputFromUser">
+    <br>
+    <br>
+    <button onclick="findAnimal()">Submit</button>
+
+    <script>
+
+        function findAnimal() {
+
+
+
+            var userInput = document.getElementById("inputFromUser").value;
+            // document.write(userInput);
+            var animal = ["cat","dog","fowl","goat","monkey","pig","lion","tiger"];
+
+            
+           
+         if(animal.includes(userInput.toLowerCase())){
+
+            alert(userInput + " is available in store!")
+
+         }else{
+            alert(userInput + " is not available!")
+
+
+         }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
